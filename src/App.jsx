@@ -6,6 +6,7 @@ import Footer from './Component/footer';
 import Produits from './Component/Produits';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap
 import './App.css';
+import Features from './Component/Features';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Navbar />
       <Banner />
       <Services /> {/* Add the Services component here */}
-      <Produits />
+      <Features />
       <Footer />
 
     </>
