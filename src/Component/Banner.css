@@ -1,0 +1,44 @@
+.banner-container {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Start at scale 0 */
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    opacity: 0; /* Start as invisible */
+  }
+  
+  /* Spawn animation */
+  .banner-text.spawn {
+    animation: spawn 0.5s forwards; /* Apply animation */
+  }
+  
+  @keyframes spawn {
+    0% {
+      transform: translate(-50%, -50%) scale(0); /* Start from scale 0 */
+      opacity: 0; /* Start invisible */
+    }
+    50% {
+      opacity: 0.5; /* Midway point */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1); /* End at scale 1 */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  

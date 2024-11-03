@@ -1,0 +1,70 @@
+.service-card {
+    position: relative;
+    overflow: hidden;
+    border: none; /* Ensure no border */
+    box-shadow: none; /* Remove any box-shadow */
+    margin: 10px; /* Add margin between cards */
+    background-color: transparent; /* Set background to transparent */
+    outline: none; /* Ensure there's no outline */
+}
+
+.card {
+    border: none !important; /* Explicitly remove any Bootstrap border */
+}
+
+.card-img-top {
+    transition: filter 0.3s ease; /* Smooth transition for the filter effect */
+    border-top-left-radius: 15px; /* Round the top left corner */
+    border-bottom-right-radius: 35px; /* Round the bottom right corner */
+}
+
+.service-card:hover .card-img-top {
+    filter: grayscale(70%); /* Change the image to 70% grey on hover */
+}
+
+.read-more {
+    position: absolute;
+    top: 30%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(-50%, -50%); /* Center it */
+    color: white; /* Change color to white */
+    font-weight: bold; /* Bold text */
+    z-index: 2; /* Ensure it's above the image */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    font-family: 'Playfair Display', serif; /* Use the same font family as the title */
+    font-size: 0.9rem; /* Adjust font size to be smaller */
+}
+
+.service-card:hover .read-more {
+    opacity: 1; /* Show the text on hover */
+}
+
+/* New Top Border Style */
+.top-border {
+    width: 100%; /* Full width of the container */
+    height: 4px; /* Height of the border */
+    background-color: #333; /* Color of the border (dark grey) */
+    margin-bottom: 20px; /* Space below the border */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .service-card {
+        margin: 5px; /* Reduce margin for mobile */
+    }
+
+    .read-more {
+        font-size: 12px; /* Further adjust font size for mobile */
+    }
+
+    .card-body {
+        padding: 1rem; /* Adjust padding for card body on mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .read-more {
+        font-size: 10px; /* Further adjust font size for smaller screens */
+    }
+}
