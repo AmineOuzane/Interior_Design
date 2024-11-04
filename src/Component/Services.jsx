@@ -41,12 +41,12 @@ const Services = () => {
   }, [visibleCards]); // Added visibleCards as a dependency
 
   return (
-    <div className="container py-5" style={{ fontFamily: 'Lora, Ubuntu, serif' }}>
+    <div className="container py-5" style={{ fontFamily: 'Montserrat, sans-serif' }}>
       <div className="top-border" /> {/* Top border */}
       <h2 className="text-center mb-4" style={{ fontSize: "2rem", color: "black" }}>
         <b>Nos Services</b>
       </h2>
-      <div className="card-group flex-column flex-md-row">
+      <div className="card-group flex-column flex-md-row" style={{ fontFamily: 'Montserrat, sans-serif' }}>
         {[
           {
             image: ammenagemetImage,
@@ -69,7 +69,7 @@ const Services = () => {
             <img
               className="card-img-top"
               src={service.image}
-              alt={service.title}
+              alt={service.title }
               style={{ width: '100%', height: '200px', objectFit: 'cover', border: 'none' }} // Ensure no border on image
             />
             <div className="read-more">Read More</div>

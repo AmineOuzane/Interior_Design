@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+
 .service-card {
     position: relative;
     overflow: hidden; /* Ensures zoom effect stays within card bounds */
     border: none;
     box-shadow: none;
-    margin: 10px;
+    margin: 20px;
     background-color: transparent;
     outline: none;
 }
@@ -14,18 +18,18 @@
 
 .card-img-top {
     transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for both transform and filter */
-    border-top-left-radius: 15px;
+    border-top-left-radius: 25px;
     border-bottom-right-radius: 35px;
 }
 
 .service-card:hover .card-img-top {
-    transform: scale(1.15); /* Slight zoom effect */
+    transform: scale(1.1); /* Slight zoom effect */
     filter: grayscale(70%);
 }
 
 .read-more {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -46,7 +50,7 @@
     width: 100%;
     height: 4px;
     background-color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Responsive styles */

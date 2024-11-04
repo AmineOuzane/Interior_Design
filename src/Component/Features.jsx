@@ -47,7 +47,7 @@ const Features = () => {
   }, [visibleCards]);
 
   return (
-    <div className="container py-5" style={{ fontFamily: 'Lora, Ubuntu, serif' }}>
+    <div className="container py-5" style={{ fontFamily: 'Montserrat, sans-serif' }}>  
       <div className="top-border" />
       <h2>
         Suivez les <span><b>Dernières Tendances</b></span>
@@ -92,7 +92,8 @@ const Features = () => {
             <div className="card-content">
               <div className="text-content">
                 <h5 className="card-title">{feature.title}</h5>
-                <p className="card-text">{feature.description}</p>
+                <br />
+                <p className="card-text" style={{ padding: '10px' }}>{feature.description} </p>
               </div>
               <img
                 className="card-img-large"

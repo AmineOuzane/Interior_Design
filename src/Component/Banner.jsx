@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import bannerImage from '../../src/images/Banner.jpg'; // Import the banner image
+import bannerImage from '../../src/images/banner2.jpg'; // Import the banner image
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Banner.css'; // Import the CSS file for additional styling
 
