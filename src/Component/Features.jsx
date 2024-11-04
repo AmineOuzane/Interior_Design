@@ -53,7 +53,7 @@ const Features = () => {
         Suivez les <span><b>Dernières Tendances</b></span>
       </h2>
       <br />
-      <p>
+      <p style={{ fontFamily: 'Montserrat, sans-serif' }}>
         Plongez dans un monde de nouveautés et d'innovations qui redéfinissent notre quotidien. Que ce soit dans la mode, la technologie, ou le design, nous vous invitons à explorer les styles émergents et les idées révolutionnaires qui captivent les esprits.
       </p>
       <div className="feature-cards-container">

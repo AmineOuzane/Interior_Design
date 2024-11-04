@@ -43,10 +43,10 @@ const Services = () => {
   return (
     <div className="container py-5" style={{ fontFamily: 'Montserrat, sans-serif' }}>
       <div className="top-border" /> {/* Top border */}
-      <h2 className="text-center mb-4" style={{ fontSize: "2rem", color: "black" }}>
-        <b>Nos Services</b>
+      <h2 className="text-center mb-4" style={{ fontSize: "2.5rem", color: "black" }}>
+        Nos Services
       </h2>
-      <div className="card-group flex-column flex-md-row" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+      <div className="card-group flex-column flex-md-row">
         {[
           {
             image: ammenagemetImage,
@@ -74,7 +74,7 @@ const Services = () => {
             />
             <div className="read-more">Read More</div>
             <div className="card-body text-center">
-              <h5 className="card-title" style={{ fontSize: "1.2rem", color: "black" }}>
+              <h5 className="card-title" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '1.1em' }}>
                 {service.title}
               </h5>
             </div>
