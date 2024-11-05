@@ -56,32 +56,33 @@ const Features = () => {
       <p style={{ fontFamily: 'Montserrat, sans-serif' }}>
         Plongez dans un monde de nouveautés et d'innovations qui redéfinissent notre quotidien. Que ce soit dans la mode, la technologie, ou le design, nous vous invitons à explorer les styles émergents et les idées révolutionnaires qui captivent les esprits.
       </p>
+      <br />
       <div className="feature-cards-container">
         {[
           {
             image: meublecanapeImage,
             title: "Meuble Canape",
-            description: "Transformez votre salon en un espace de confort et d'élégance avec notre canapé de qualité supérieure"
+            description: "Transformez votre salon en un espace de confort et d'élégance avec notre canapé de qualité supérieure.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dignissimos fugiat enim nulla? Maxime expedita exercitationem hic velit animi dolores sapiente consequuntur, deserunt, illo, voluptatem quidem necessitatibus quo tempore?"
           },
           {
             image: dressingImage,
             title: "Dressing",
-            description: "Optimisez votre espace avec notre dressing élégant et fonctionnel, conçu pour allier style et praticité"
+            description: "Optimisez votre espace avec notre dressing élégant et fonctionnel, conçu pour allier style et praticité.     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dignissimos fugiat enim nulla? Maxime expedita exercitationem hic velit animi dolores sapiente consequuntur, deserunt, illo, voluptatem quidem necessitatibus quo tempore?"
           },
           {
             image: salledebainImage,
             title: "Salle de Bain",
-            description: "Transformez votre salle de bain en un espace de détente et de luxe avec notre mobilier de salle de bain élégant et fonctionnel"
+            description: "Transformez votre salle de bain en un espace de détente et de luxe avec notre mobilier de salle de bain élégant et fonctionnel.   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dignissimos fugiat enim nulla? Maxime expedita exercitationem hic velit animi dolores sapiente consequuntur, deserunt, illo, voluptatem quidem necessitatibus quo tempore?"
           },
           {
             image: chambreacoucherImage,
             title: "Chambre a Coucher",
-            description: "Créez une oasis de détente et de sophistication dans votre chambre à coucher avec notre mobilier raffiné et fonctionnel, conçu pour allier confort et esthétisme"
+            description: "Créez une oasis de détente et de sophistication dans votre chambre à coucher avec notre mobilier raffiné et fonctionnel, conçu pour allier confort et esthétisme.    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dignissimos fugiat enim nulla? Maxime expedita exercitationem hic velit animi dolores sapiente consequuntur, deserunt, illo, voluptatem quidem necessitatibus quo tempore?"
           },
           {
             image: teleImage,
             title: "Meuble Television",
-            description: "Donnez à votre salon une allure moderne et raffinée avec notre meuble TV sophistiqué"
+            description: "Donnez à votre salon une allure moderne et raffinée avec notre meuble TV sophistiqué.   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dignissimos fugiat enim nulla? Maxime expedita exercitationem hic velit animi dolores sapiente consequuntur, deserunt, illo, voluptatem quidem necessitatibus quo tempore?"
           },
         ].map((feature, index) => (
           <div

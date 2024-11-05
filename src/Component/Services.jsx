@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import ammenagemetImage from '../../src/images/ammenagement2.0.jpeg';
-import menuiserieImage from '../../src/images/menuiserie.jpg';
-import textileImage from '../../src/images/textile.jpg';
+import ammenagemetImage from '../../src/images/interior.jpg';
+import menuiserieImage from '../../src/images/menuiserie2.0.jpg';
+import textileImage from '../../src/images/textile2.0.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Service.css'; // Ensure to import your CSS file
 
@@ -70,7 +70,7 @@ const Services = () => {
               className="card-img-top"
               src={service.image}
               alt={service.title }
-              style={{ width: '100%', height: '200px', objectFit: 'cover', border: 'none' }} // Ensure no border on image
+              style={{ width: '400px', height: '350px', objectFit: 'cover', border: 'none' }} // Ensure no border on image
             />
             <div className="read-more">Read More</div>
             <div className="card-body text-center">

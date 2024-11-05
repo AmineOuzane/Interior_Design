@@ -7,9 +7,11 @@
     overflow: hidden; /* Ensures zoom effect stays within card bounds */
     border: none;
     box-shadow: none;
-    margin: 20px;
+    margin: 30px;
+    margin-left: 30px;
     background-color: transparent;
     outline: none;
+
 }
 
 .card {
@@ -18,12 +20,11 @@
 
 .card-img-top {
     transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for both transform and filter */
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 35px;
 }
 
+
 .service-card:hover .card-img-top {
-    transform: scale(1.1); /* Slight zoom effect */
+    transform: scale(1.08); /* Slight zoom effect */
     filter: grayscale(70%);
 }
 
@@ -37,8 +38,8 @@
     z-index: 2;
     opacity: 0;
     transition: opacity 0.3s ease;
-    font-family: 'Playfair Display', serif;
-    font-size: 0.9rem;
+    font-family: 'Montserrat, sans-serif';
+    font-size: 1.1rem;
 }
 
 .service-card:hover .read-more {
