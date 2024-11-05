@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import meublecanapeImage from '../../src/images/meublecanape.jpg';
-import dressingImage from '../../src/images/dressing2.0.jpg';
-import salledebainImage from '../../src/images/salledebain.jpg';
-import chambreacoucherImage from '../../src/images/chambreacoucher.jpg';
-import teleImage from '../../src/images/tele.jpeg';
+import canapeImage from '../../src/images/canapefeature.jpg';
+import chambreImage from '../../src/images/chambre.jpg';
+import tableImage from '../../src/images/table.jpg';
+import chaiseImage from '../../src/images/chaise.png';
+import meubleImage from '../../src/images/meuble.jpg';
+import habillageImage from '../../src/images/habillage.jpg';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Feature.css';
@@ -61,27 +63,37 @@ const Features = () => {
         {[
           {
             image: meublecanapeImage,
-            title: "Meuble Canape",
+            title: "DECOUVREZ NOS OFFRES SALON",
             description: "Transformez votre salon en un espace de confort et d'élégance avec notre canapé de qualité supérieure.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dignissimos fugiat enim nulla? Maxime expedita exercitationem hic velit animi dolores sapiente consequuntur, deserunt, illo, voluptatem quidem necessitatibus quo tempore?"
           },
           {
-            image: dressingImage,
-            title: "Dressing",
+            image: canapeImage,
+            title: "DÉCOUVRIR NOS CANAPÉS",
             description: "Optimisez votre espace avec notre dressing élégant et fonctionnel, conçu pour allier style et praticité.     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dignissimos fugiat enim nulla? Maxime expedita exercitationem hic velit animi dolores sapiente consequuntur, deserunt, illo, voluptatem quidem necessitatibus quo tempore?"
           },
           {
-            image: salledebainImage,
-            title: "Salle de Bain",
+            image: chambreImage,
+            title: "DECOUVREZ NOS OFFRES CHAMBRES",
             description: "Transformez votre salle de bain en un espace de détente et de luxe avec notre mobilier de salle de bain élégant et fonctionnel.   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dignissimos fugiat enim nulla? Maxime expedita exercitationem hic velit animi dolores sapiente consequuntur, deserunt, illo, voluptatem quidem necessitatibus quo tempore?"
           },
           {
-            image: chambreacoucherImage,
-            title: "Chambre a Coucher",
+            image: tableImage,
+            title: "DECOUVREZ NOS COLLECTIONS DE TABLE",
             description: "Créez une oasis de détente et de sophistication dans votre chambre à coucher avec notre mobilier raffiné et fonctionnel, conçu pour allier confort et esthétisme.    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dignissimos fugiat enim nulla? Maxime expedita exercitationem hic velit animi dolores sapiente consequuntur, deserunt, illo, voluptatem quidem necessitatibus quo tempore?"
           },
           {
-            image: teleImage,
-            title: "Meuble Television",
+            image: chaiseImage,
+            title: "DECOUVREZ NOS COLLECTIONS DE CHAISES",
+            description: "Donnez à votre salon une allure moderne et raffinée avec notre meuble TV sophistiqué.   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dignissimos fugiat enim nulla? Maxime expedita exercitationem hic velit animi dolores sapiente consequuntur, deserunt, illo, voluptatem quidem necessitatibus quo tempore?"
+          },
+          {
+            image: meubleImage,
+            title: "INSPIREZ VOUS DE NOS MEUBLES",
+            description: "Donnez à votre salon une allure moderne et raffinée avec notre meuble TV sophistiqué.   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dignissimos fugiat enim nulla? Maxime expedita exercitationem hic velit animi dolores sapiente consequuntur, deserunt, illo, voluptatem quidem necessitatibus quo tempore?"
+          },
+          {
+            image: habillageImage,
+            title: "DECOUVREZ NOS HABILLAGE EN BOIS",
             description: "Donnez à votre salon une allure moderne et raffinée avec notre meuble TV sophistiqué.   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium dignissimos fugiat enim nulla? Maxime expedita exercitationem hic velit animi dolores sapiente consequuntur, deserunt, illo, voluptatem quidem necessitatibus quo tempore?"
           },
         ].map((feature, index) => (

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import ammenagemetImage from '../../src/images/interior.jpg';
+import ammenagemetImage from '../../src/images/livingroom.jpg';
 import menuiserieImage from '../../src/images/menuiserie2.0.jpg';
 import textileImage from '../../src/images/textile2.0.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';

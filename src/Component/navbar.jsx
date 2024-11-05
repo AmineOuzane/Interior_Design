@@ -21,14 +21,26 @@ const Navbar = () => {
           <li className="nav-item active">
             <a className="nav-link" href="#">Acceuil</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Services</a>
+          <li className="nav-item active">
+            <a className="nav-link" href="#">Salon</a>
+          </li>
+          <li className="nav-item active">
+            <a className="nav-link" href="#">Canapés</a>
+          </li>
+          <li className="nav-item active">
+            <a className="nav-link" href="#">Chambre</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Categories</a>
+            <a className="nav-link" href="#">Table</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" href="#">Contactez-nous</a>
+            <a className="nav-link" href="#">Chaises</a>
+          </li>
+          <li className="nav-item active">
+            <a className="nav-link" href="#">Meubles</a>
+          </li>
+          <li className="nav-item active">
+            <a className="nav-link" href="#">Habillage</a>
           </li>
         </ul>
       </div>

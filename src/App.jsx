@@ -14,7 +14,7 @@ function App() {
     <>
       <Navbar />
       <Banner />
-      <Services /> {/* Add the Services component here */}
+       {/*<Services />*/}
       <Features />
       {/*<Contact/>*/}
       <WhatsAppButton />
