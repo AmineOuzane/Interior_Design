@@ -1,21 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-
-/* Feature card base styles */
 .feature-card {
-    border: none;
-    box-shadow: none;
     margin: 20px auto;
     width: 100%;
-    transition: transform 0.3s ease;
     overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .feature-card:hover {
     transform: scale(1.02);
 }
 
-/* Card content layout */
+/* Flex layout for alternating content */
 .card-content {
     display: flex;
     align-items: center;
@@ -25,33 +21,15 @@
     border-radius: 8px;
 }
 
-/* Alternate layout for every other card */
+/* Alternate layout */
 .feature-card.reverse .card-content {
-    flex-direction: row-reverse; /* Reverse the order of text and image */
+    flex-direction: row-reverse;
 }
 
-/* Text styling */
-.text-content {
-    flex: 1;
-    padding: 1rem;
-}
-
-.card-title {
-    font-size: 1.8rem;
-    color: black;
-    /*font-family: 'Playfair Display', serif;*/
-}
-
-.card-text {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Larger image styling */
+/* Image styling */
 .card-img-large {
-    width: 50%; /* Make image take up more space */
+    width: 60%;  /* Image takes up 60% of the container width */
     height: auto;
-    object-fit: cover;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
@@ -60,7 +38,35 @@
     transform: scale(1.05);
 }
 
-/* Top border style */
+/* Text section styling */
+.text-content {
+    width: 35%;  /* Carousel takes up 35% of the container width */
+    margin-left: 20px; /* Adds space between the image and the carousel */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat, sans-serif' ;
+}
+
+.card-carousel {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
 .top-border {
     width: 100%;
     height: 4px;
@@ -72,19 +78,20 @@
 @media (max-width: 768px) {
     .card-content {
         flex-direction: column;
+        align-items: center;
     }
 
     .feature-card.reverse .card-content {
         flex-direction: column;
     }
 
-    .text-content {
-        padding: 0;
-        padding-bottom: 1rem;
-        text-align: center;
+    .card-img-large, .card-carousel {
+        width: 80%; /* Adjust both the image and carousel to take 80% on small screens */
     }
 
-    .card-img-large {
-        width: 100%; /* Full width on smaller screens */
+    .text-content {
+        align-items: center;
+        text-align: center;
+        margin-left: 0;  /* Removes margin on small screens */
     }
 }
