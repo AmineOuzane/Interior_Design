@@ -9,12 +9,12 @@ import WhatsAppButton from './Component/WhatsAppButton';
 
 // Import the pages
 import Salon from './Component/Salon';
-/*import Canapes from './Pages/Canapes';
-import Chambre from './Pages/Chambre';
-import Table from './Pages/Table';
-import Chaises from './Pages/Chaises';
-import Meubles from './Pages/Meubles';
-import Habillage from './Pages/Habillage';*/
+import Canape from './Component/Canape';
+import Chambre from './Component/Chambre';
+import Table from './Component/Table';
+import Chaise from './Component/Chaise';
+import Meuble from './Component/Meuble';
+import Habillage from './Component/Habillage';
 
 
 function MainContent() {
@@ -41,6 +41,13 @@ function App() {
     <Navbar />
     <Routes>
       <Route path="/salon" element={<Salon />} />
+      <Route path="/canape" element={<Canape />} />
+      <Route path="/chambre" element={<Chambre />} />
+      <Route path="/table" element={<Table />} />
+      <Route path="/chaise" element={<Chaise />} />
+      <Route path="/meuble" element={<Meuble />} />
+      <Route path="/habillage" element={<Habillage />} />
+
     </Routes>
     <MainContent />
     <Footer />

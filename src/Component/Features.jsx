@@ -122,7 +122,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="container py-5">
+    <div className="container py-5 mt-2">
       <div className="top-border" />
       <h2>Suivez les <span><b>Dernières Tendances</b></span></h2>
       <p>

@@ -1,0 +1,9 @@
+/* Centering the menu items in mobile view */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
