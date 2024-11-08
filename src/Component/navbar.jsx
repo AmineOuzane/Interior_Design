@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">Mounaim</a>
+      <Link className="navbar-brand" to="/">Mounaim</Link>
       <button
         className="navbar-toggler"
         type="button"
-        data-bs-toggle="collapse" // For Bootstrap 5
-        data-bs-target="#navbarNav" // For Bootstrap 5
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -18,29 +19,29 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link" href="#">Acceuil</a>
-          </li>
-          <li className="nav-item active">
-            <a className="nav-link" href="#">Salon</a>
-          </li>
-          <li className="nav-item active">
-            <a className="nav-link" href="#">Canapés</a>
-          </li>
-          <li className="nav-item active">
-            <a className="nav-link" href="#">Chambre</a>
+          <li className="nav-item">
+            <Link className="nav-link">Acceuil</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Table</a>
+            <Link className="nav-link" to="/salon">Salon</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Chaises</a>
+            <Link className="nav-link" >Canapés</Link>
           </li>
-          <li className="nav-item active">
-            <a className="nav-link" href="#">Meubles</a>
+          <li className="nav-item">
+            <Link className="nav-link">Chambre</Link>
           </li>
-          <li className="nav-item active">
-            <a className="nav-link" href="#">Habillage</a>
+          <li className="nav-item">
+            <Link className="nav-link" >Table</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link">Chaises</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" >Meubles</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" >Habillage</Link>
           </li>
         </ul>
       </div>
@@ -49,4 +50,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

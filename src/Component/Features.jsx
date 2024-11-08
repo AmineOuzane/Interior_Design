@@ -144,17 +144,17 @@ const Features = () => {
               <div className="text-content">
                 <h5 className="card-title">{feature.title}</h5>
                 <Carousel className="card-carousel">
-  {feature.carouselImages && feature.carouselImages.map((image, idx) => (
-    <Carousel.Item key={idx}>
-      <img className="d-block w-100 carousel-img" src={image.src} alt={image.title} />
-      <Carousel.Caption>
-        <h5>{image.title}</h5>
-      </Carousel.Caption>
-    </Carousel.Item>
-  ))}
-</Carousel>
+                  {feature.carouselImages && feature.carouselImages.map((image, idx) => (
+                    <Carousel.Item key={idx}>
+                      <img className="d-block w-100 carousel-img" src={image.src} alt={image.title} />
+                      <Carousel.Caption>
+                        <h5>{image.title}</h5>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                  ))}
+                </Carousel>
 
-                <Button variant="primary" className="mt-3">Voir Plus</Button>
+                <Button className='voirplus' style={{backgroundColor: '#333'}}>Voir Plus</Button>
               </div>
             </div>
           </div>
