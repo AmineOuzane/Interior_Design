@@ -1,0 +1,44 @@
+/* Container for the list of products */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+/* Container for the product card */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; /* Fixed width for all cards */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Style for the product image */
+.product-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+/* Style for the product title */
+.product-card h1 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Style for the product description */
+.product-card p {
+  font-size: 1em;
+  color: #666;
+  text-align: center;
+}
