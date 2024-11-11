@@ -4,18 +4,17 @@
     object-fit: cover; /* Ensures the image is resized proportionally */
   }
   
-
-/* Container for the list of canapes */
-.canape-list {
+  /* Container for the list of canapes */
+  .canape-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center the cards */
     gap: 20px; /* Space between cards */
     padding: 20px;
-}
-
-/* Container for the canape card */
-.canape-card {
+  }
+  
+  /* Container for the canape card */
+  .canape-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,26 +25,34 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-}
-
-/* Style for the canape image */
-.canape-card img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for transform and shadow */
+  }
+  
+  /* Floating effect when hovering */
+  .canape-card:hover {
+    transform: translateY(-10px); /* Moves the card up */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  /* Style for the canape image */
+  .canape-card img {
     width: 100%;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
-}
-
-/* Style for the canape title */
-.canape-card h1 {
+  }
+  
+  /* Style for the canape title */
+  .canape-card h1 {
     font-size: 1.5em;
     margin: 15px 0;
     color: #333;
     text-align: center;
-}
-
-/* Style for the canape description */
-.canape-card p {
+  }
+  
+  /* Style for the canape description */
+  .canape-card p {
     font-size: 1em;
     color: #666;
     text-align: center;
-}
+  }
+  

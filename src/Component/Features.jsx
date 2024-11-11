@@ -142,7 +142,7 @@ const Features = () => {
               
               {/* Right Side: Title, Carousel, and Button */}
               <div className="text-content">
-                <h5 className="card-title">{feature.title}</h5>
+                <h5 className="card-title" style={{ fontFamily: 'Montserrat, sans-serif', margin: "10px" }}>{feature.title}</h5>
                 <Carousel className="card-carousel">
                   {feature.carouselImages && feature.carouselImages.map((image, idx) => (
                     <Carousel.Item key={idx}>
