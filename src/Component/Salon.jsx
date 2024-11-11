@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Salon.css'; // Import the CSS file
 
+import SalonBannerImage from '../../src/images/SalonBanner2.png'; // Import the banner image
+
+
 function Salon() {
     // State to hold a list of products
     const [products, setProducts] = useState([]);
@@ -24,6 +27,11 @@ function Salon() {
 
     return (
         <div className="product-list"> {/* Container for the list of products */}
+        <img
+        src={SalonBannerImage}
+        alt="Bannière Salon"
+        className="banner-image"
+      />
             {products.map(product => (
                 <div key={product.id} className="product-card"> {/* Apply the card styling */}
                     <img src={`data:image/jpeg;base64,${product.image}`} alt={product.title} /> {/* Display the product image */}

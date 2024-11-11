@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Canape.css'; // Import the CSS file
 
+import CanapeBannerImage from '../../src/images/CanapeBanner2.png'; // Import the banner image
+
+
 function Canape() {
     // State to hold a list of canapes
     const [canapes, setCanapes] = useState([]);
@@ -24,6 +27,11 @@ function Canape() {
 
     return (
         <div className="canape-list"> {/* Container for the list of canapes */}
+        <img
+        src={CanapeBannerImage}
+        alt="Bannière Salon"
+        className="banner-image"
+      />
             {canapes.map(canape => (
                 <div key={canape.id} className="canape-card"> {/* Apply the card styling */}
                     <img src={`data:image/jpeg;base64,${canape.image}`} alt={canape.title} /> {/* Display the canape image */}
