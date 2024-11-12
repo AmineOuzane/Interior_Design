@@ -28,7 +28,7 @@ function Chambre() {
         <div className="product-list"> {/* Container for the list of products */}
         <img
         src={ChambreBannerImage}
-        alt="Bannière Salon"
+        alt="Bannière Chambre"
         className="banner-image"
       />
             {products.map(product => (

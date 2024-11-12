@@ -29,7 +29,7 @@ function Canape() {
         <div className="canape-list"> {/* Container for the list of canapes */}
         <img
         src={CanapeBannerImage}
-        alt="Bannière Salon"
+        alt="Bannière Canape"
         className="banner-image"
       />
             {canapes.map(canape => (

@@ -123,9 +123,9 @@ const Features = () => {
 
   return (
     <div className="container py-5 mt-2">
-      <div className="top-border" />
-      <h2>Suivez les <span><b>Dernières Tendances</b></span></h2>
-      <p>
+      <div className="top-border"/>
+      <h2 style={{ fontFamily: 'Montserrat, sans-serif', margin: "10px", textAlign: "center" }}>Suivez les <span><b>Dernières Tendances</b></span></h2>
+      <p style={{ fontFamily: 'Montserrat, sans-serif', margin: "10px", textAlign: "center" }} >
         Plongez dans un monde de nouveautés et d'innovations qui redéfinissent notre quotidien.
         Explorez les styles émergents et les idées révolutionnaires.
       </p>
@@ -153,8 +153,8 @@ const Features = () => {
                     </Carousel.Item>
                   ))}
                 </Carousel>
-
-                <Button className='voirplus' style={{backgroundColor: '#333'}}>Voir Plus</Button>
+                <button>Voir Plus</button>
+                {/*<Button className='voirplus' style={{backgroundColor: '#333'}}>Voir Plus</Button>*/}
               </div>
             </div>
           </div>
