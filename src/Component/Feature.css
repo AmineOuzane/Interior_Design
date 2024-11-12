@@ -10,14 +10,7 @@
 .feature-card:hover {
     transform: scale(1.02);
 }
-.h2{
-    font-family:'Montserrat, sans-serif';
-    text-align: center;
-}
-.p{
-    font-family:'Montserrat, sans-serif';
-    text-align: center;
-}
+
 
 /* Flex layout for alternating content */
 .card-content {
@@ -85,7 +78,7 @@
 }
 
 /* From Uiverse.io by alexroumi */ 
-button {
+.voir {
     padding: 15px 25px;
     border: unset;
     border-radius: 15px;
@@ -102,7 +95,7 @@ button {
     width: 100%;
    }
    
-   button::before {
+  .voirplus::before {
     content: "";
     position: absolute;
     top: 0;
@@ -117,11 +110,11 @@ button {
     transition: all 250ms
    }
    
-   button:hover {
+   .voirplus:hover {
     color: #e8e8e8;
    }
    
-   button:hover::before {
+   .voirplus:hover::before {
     width: 100%;
    }
 
