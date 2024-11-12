@@ -62,6 +62,7 @@
     margin-bottom: 1rem;
 }
 
+
 .button-container .voirplus {
     display: flex;
     justify-content: center;  /* Center the button */
@@ -78,10 +79,10 @@
 }
 
 /* From Uiverse.io by alexroumi */ 
-.voir {
+.more {
     padding: 15px 25px;
     border: unset;
-    border-radius: 15px;
+    border-radius: 5px;
     color: #1d1c1c;
     z-index: 1;
     background: #e8e8e8;
@@ -95,14 +96,14 @@
     width: 100%;
    }
    
-  .voirplus::before {
+  .more::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 0;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: #212121;
     z-index: -1;
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
@@ -110,11 +111,11 @@
     transition: all 250ms
    }
    
-   .voirplus:hover {
+   .more:hover {
     color: #e8e8e8;
    }
    
-   .voirplus:hover::before {
+   .more:hover::before {
     width: 100%;
    }
 

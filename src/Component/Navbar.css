@@ -1,3 +1,19 @@
+/* Navbar styling */
+.navbar {
+  font-size: 1.2rem;  /* Increase font size in the navbar */
+  padding: 1.2rem 0;  /* Increase padding for a larger look */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;  /* Increase size of the brand name */
+}
+
+/* Adjusting nav-link styles */
+.nav-link {
+  font-size: 1.1rem;    /* Make links slightly larger */
+  padding: 0.5rem 1rem; /* Add padding for spacing */
+}
+
 /* Centering the menu items in mobile view */
 @media (max-width: 991.98px) {
     .navbar-nav {

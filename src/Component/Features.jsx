@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Carousel, Button } from 'react-bootstrap';
+import { Carousel} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Feature.css';
 
@@ -15,7 +15,7 @@ import habillageImage from '../../src/images/habillage.jpg';
 import sofaUImage from '../../src/images/salonSofaU.png';
 import sofaLImage from '../../src/images/salonSofaL.png';
 import sofa1Image from '../../src/images/sofa1.png';
-import sofa2Image from '../../src/images/sofa2.png';
+import sofa2Image from '../../src/images/sofaLMarron.png';
 import bed1Image from '../../src/images/bed1.png';
 import bed2Image from '../../src/images/bed2.png';
 import table1Image from '../../src/images/table1.png';
@@ -153,8 +153,7 @@ const Features = () => {
                     </Carousel.Item>
                   ))}
                 </Carousel>
-                <button>Voir Plus</button>
-                {/*<Button className='voirplus' style={{backgroundColor: '#333'}}>Voir Plus</Button>*/}
+                <button className='more' style={{ fontFamily: 'Montserrat, sans-serif' }}>Decouvrir</button>
               </div>
             </div>
           </div>
