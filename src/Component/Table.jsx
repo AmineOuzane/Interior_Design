@@ -1,45 +1,77 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
-import './Salon.css'; // Import the CSS file
+import './Salon.css';
+import SalonBannerImage from '../../src/images/SalonBanner2.png';
 
-import TableBannerImage from '../../src/images/TableBanner2.png'; // Import the banner image
+function Salon() {
+    const [products, setProducts] = useState([]);
+    const productRefs = useRef([]); // Store references to product elements
 
-function Table() {
-    // State to hold a list of products
-    const [tables, setTables] = useState([]);
-
-    // Fetch all products when the component mounts
+    // Fetch product data
     useEffect(() => {
         axios.get('http://localhost:8080/tables')
             .then((response) => {
-                setTables(response.data);
+                setProducts(response.data);
             })
             .catch((error) => {
-                console.error('There was an error fetching the products!', error);
+                console.error('Error fetching the products:', error);
             });
     }, []);
 
-    // Show a loading message until the products data is available
-    if (tables.length === 0) {
+    // Observe when products enter the viewport
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            },
+            {
+                threshold: 0.1, // Trigger when 10% of the card is visible
+            }
+        );
+
+        productRefs.current.forEach((ref) => {
+            if (ref) observer.observe(ref);
+        });
+
+        // Clean up observer
+        return () => {
+            productRefs.current.forEach((ref) => {
+                if (ref) observer.unobserve(ref);
+            });
+        };
+    }, [products]);
+
+    if (products.length === 0) {
         return <div>Loading...</div>;
     }
 
     return (
-        <div className="product-list"> {/* Container for the list of products */}
-         <img
-        src={TableBannerImage}
-        alt="Bannière Table"
-        className="banner-image"
-      />
-            {tables.map(table => (
-                <div key={table.id} className="product-card"> {/* Apply the card styling */}
-                    <img src={`data:image/jpeg;base64,${table.image}`} alt={table.title} /> {/* Display the product image */}
-                    <h1>{table.title}</h1> {/* Display the product title */}
-                    <p>{table.description}</p> {/* Display the product description */}
+        <div className="product-list">
+            <img
+                src={SalonBannerImage}
+                alt="Bannière Salon"
+                className="banner-image"
+            />
+            {products.map((product, index) => (
+                <div
+                    key={product.id}
+                    className="product-card"
+                    ref={(el) => (productRefs.current[index] = el)} // Attach ref for observing
+                >
+                    <img
+                        src={`data:image/jpeg;base64,${product.image}`}
+                        alt={product.title}
+                    />
+                    <h1>{product.title}</h1>
+                    <p>{product.description}</p>
                 </div>
             ))}
         </div>
     );
 }
 
-export default Table;
+export default Salon;

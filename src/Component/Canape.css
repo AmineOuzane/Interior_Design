@@ -1,58 +1,125 @@
 .banner-image {
-    height: 70vh; 
-    width: 100%;
-    object-fit: cover; /* Ensures the image is resized proportionally */
-  }
-  
-  /* Container for the list of canapes */
-  .canape-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the cards */
-    gap: 20px; /* Space between cards */
-    padding: 20px;
-  }
-  
-  /* Container for the canape card */
-  .canape-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px; /* Fixed width for all cards */
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for transform and shadow */
-  }
-  
-  /* Floating effect when hovering */
-  .canape-card:hover {
-    transform: translateY(-10px); /* Moves the card up */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-  }
-  
-  /* Style for the canape image */
-  .canape-card img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-    object-fit: cover;
-  }
-  
-  /* Style for the canape title */
-  .canape-card h1 {
-    font-size: 1.5em;
-    margin: 15px 0;
-    color: #333;
-    text-align: center;
-  }
-  
-  /* Style for the canape description */
-  .canape-card p {
-    font-size: 1em;
-    color: #666;
-    text-align: center;
-  }
-  
+  height: 70vh; 
+  width: 100%;
+  object-fit: cover; /* Ensures the image is resized proportionally */
+}
+
+/* Container for the list of products */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+/* Container for the product card */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; /* Fixed width for all cards */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initial position for animation */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth animation for visibility */
+}
+
+/* Add this class dynamically to trigger the fade-in effect */
+.product-card.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset position */
+}
+
+/* Floating effect when hovering */
+.product-card:hover {
+  transform: translateY(-10px); /* Moves the card up */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Style for the product image */
+.product-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+/* Style for the product title */
+.product-card h1 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Style for the product description */
+.product-card p {
+  font-size: 1em;
+  color: #666;
+  text-align: center;
+}
+
+/* Container for the list of canapes */
+.canape-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+/* Container for the canape card */
+.canape-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; /* Fixed width for all cards */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initial position for animation */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth animation for visibility */
+}
+
+/* Add this class dynamically to trigger the fade-in effect */
+.canape-card.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset position */
+}
+
+/* Floating effect when hovering */
+.canape-card:hover {
+  transform: translateY(-10px); /* Moves the card up */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Style for the canape image */
+.canape-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+/* Style for the canape title */
+.canape-card h1 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Style for the canape description */
+.canape-card p {
+  font-size: 1em;
+  color: #666;
+  text-align: center;
+}

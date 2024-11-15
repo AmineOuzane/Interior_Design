@@ -1,5 +1,5 @@
 .banner-image {
-  height: 70vh; 
+  height: 70vh;
   width: 100%;
   object-fit: cover; /* Ensures the image is resized proportionally */
 }
@@ -25,7 +25,15 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for transform and shadow */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initial position for animation */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth animation for visibility */
+}
+
+/* Add this class dynamically to trigger the fade-in effect */
+.product-card.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset position */
 }
 
 /* Floating effect when hovering */
