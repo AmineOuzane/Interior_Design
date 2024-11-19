@@ -71,8 +71,8 @@ const Features = () => {
   return (
     <div className="container py-5 mt-2">
       <div className="top-border" />
-      <h2 className="section-title">Suivez les <span><b>Dernières Tendances</b></span></h2>
-      <p className="section-description">
+      <h2 className="section-title" style={{ fontFamily: 'Montserrat, sans-serif', textAlign: 'center' }}>Suivez les <span><b>Dernières Tendances</b></span></h2>
+      <p className="section-description" style={{ fontFamily: 'Montserrat, sans-serif', textAlign: 'center' }} >
         Plongez dans un monde de nouveautés et d'innovations qui redéfinissent notre quotidien.
         Explorez les styles émergents et les idées révolutionnaires.
       </p>
@@ -86,7 +86,7 @@ const Features = () => {
             <div className="card-content">
               <img className="card-img-large" src={feature.mainImage} alt={feature.title} />
               <div className="text-content">
-                <h5 className="card-title">{feature.title}</h5>
+                <h5 className="card-title" style={{ fontFamily: 'Montserrat, sans-serif' }}>{feature.title}</h5>
                 <Carousel className="card-carousel">
                   {feature.carouselImages.map((image, idx) => (
                     <Carousel.Item key={idx}>
@@ -97,7 +97,7 @@ const Features = () => {
                     </Carousel.Item>
                   ))}
                 </Carousel>
-                <button className="more">Découvrir</button>
+                <button className="more" style={{ fontFamily: 'Montserrat, sans-serif' }}>Découvrir</button>
               </div>
             </div>
           </div>

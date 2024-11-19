@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
 import './Salon.css';
-import SalonBannerImage from '../../src/images/SalonBanner2.png';
+import SalonBannerImage from '../../src/images/ChaiseBanner2.png';
 
 function Salon() {
     const [products, setProducts] = useState([]);
