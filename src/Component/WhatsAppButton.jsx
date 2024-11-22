@@ -3,7 +3,7 @@ import whatsappImage from '../../src/images/whatsapp.jpeg';
 
 const WhatsAppButton = () => {
   const handleClick = () => {
-    const url = `https://wa.me/212681504811?text=Bonjour%2C%20puis-je%20avoir%20plus%20d%27information`;
+    const url = `https://wa.me/212661116047?text=Bonjour%2C%20puis-je%20avoir%20plus%20d%27information`;
     window.open(url, '_blank'); // Opens in a new tab
   };
 
