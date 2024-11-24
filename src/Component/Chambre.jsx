@@ -3,7 +3,7 @@ import axios from 'axios';
 import './Salon.css';
 import SalonBannerImage from '../../src/images/ChambreBanner2.png';
 
-function Salon() {
+function Chambre() {
     const [products, setProducts] = useState([]);
     const productRefs = useRef([]); // Store references to product elements
 
@@ -67,11 +67,10 @@ function Salon() {
                         alt={product.title}
                     />
                     <h1>{product.title}</h1>
-                    <p>{product.description}</p>
                 </div>
             ))}
         </div>
     );
 }
 
-export default Salon;
+export default Chambre;

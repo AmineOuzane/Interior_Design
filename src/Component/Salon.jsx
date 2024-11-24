@@ -50,12 +50,14 @@ function Salon() {
     }
 
     return (
+        <>
         <div className="product-list">
             <img
                 src={SalonBannerImage}
                 alt="Bannière Salon"
                 className="banner-image"
             />
+            
             {products.map((product, index) => (
                 <div
                     key={product.id}
@@ -67,10 +69,10 @@ function Salon() {
                         alt={product.title}
                     />
                     <h1>{product.title}</h1>
-                    <p>{product.description}</p>
                 </div>
             ))}
         </div>
+        </>
     );
 }
 

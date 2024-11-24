@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Component/navbar';
 import Banner from './Component/Banner';
-import Footer from './Component/footer';
+import Footer from './Component/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Features from './Component/Features';

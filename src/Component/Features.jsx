@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Feature.css';
 
@@ -27,14 +28,15 @@ import habillage1Image from '../../src/images/habillage7.png';
 import habillage2Image from '../../src/images/habillage8.png';
 const Features = () => {
   const featureData = [
-    { title: "DÉCOUVREZ NOS OFFRES SALON", mainImage: meublecanapeImage, carouselImages: [{ src: sofaLImage}, { src: sofaUImage}] },
-    { title: "DÉCOUVREZ NOS CANAPÉS", mainImage: canapeImage, carouselImages: [{ src: sofa1Image}, { src: sofa2Image}] },
-    { title: "DÉCOUVREZ NOS OFFRES CHAMBRES", mainImage: chambreImage, carouselImages: [{ src: bed1Image}, { src: bed2Image}] },
-    { title: "DÉCOUVREZ NOS COLLECTIONS DE TABLE", mainImage: tableImage, carouselImages: [{ src: table1Image}, { src: table2Image}] },
-    { title: "DÉCOUVREZ NOS COLLECTIONS DE CHAISES", mainImage: chaiseImage, carouselImages: [{ src: chaise1Image}, { src: chaise2Image}] },
-    { title: "INSPIREZ-VOUS DE NOS MEUBLES", mainImage: meubleImage, carouselImages: [{ src: furniture1Image}, { src: furniture2Image}] },
-    { title: "DÉCOUVREZ NOS HABILLAGES EN BOIS", mainImage: habillageImage, carouselImages: [{ src: habillage1Image }, { src: habillage2Image}] },
+    { title: "DÉCOUVREZ NOS OFFRES SALON", mainImage: meublecanapeImage, carouselImages: [{ src: sofaLImage}, { src: sofaUImage}], route: "salon" },
+    { title: "DÉCOUVREZ NOS CANAPÉS", mainImage: canapeImage, carouselImages: [{ src: sofa1Image}, { src: sofa2Image}], route: "canape" },
+    { title: "DÉCOUVREZ NOS OFFRES CHAMBRES", mainImage: chambreImage, carouselImages: [{ src: bed1Image}, { src: bed2Image}], route: "chambre" },
+    { title: "DÉCOUVREZ NOS COLLECTIONS DE TABLE", mainImage: tableImage, carouselImages: [{ src: table1Image}, { src: table2Image}], route: "table" },
+    { title: "DÉCOUVREZ NOS COLLECTIONS DE CHAISES", mainImage: chaiseImage, carouselImages: [{ src: chaise1Image}, { src: chaise2Image}], route: "chaise" },
+    { title: "INSPIREZ-VOUS DE NOS MEUBLES", mainImage: meubleImage, carouselImages: [{ src: furniture1Image}, { src: furniture2Image}], route: "meuble" },
+    { title: "DÉCOUVREZ NOS HABILLAGES EN BOIS", mainImage: habillageImage, carouselImages: [{ src: habillage1Image }, { src: habillage2Image}], route: "habillage" },
   ];
+  
 
   const [visibleCards, setVisibleCards] = useState(new Array(featureData.length).fill(false));
   const cardRefs = useRef([]);
@@ -78,31 +80,36 @@ const Features = () => {
         Explorez les styles émergents et les idées révolutionnaires.
       </p>
       <div className="feature-cards-container">
-        {featureData.map((feature, index) => (
-          <div
-            key={index}
-            className={`feature-card ${visibleCards[index] ? 'spawn' : 'hidden'} ${index % 2 === 1 ? 'reverse' : ''}`}
-            ref={(el) => (cardRefs.current[index] = el)}
-          >
-            <div className="card-content">
-              <img className="card-img-large" src={feature.mainImage} alt={feature.title} />
-              <div className="text-content">
-                <h5 className="card-title" style={{ fontFamily: 'Montserrat, sans-serif' }}>{feature.title}</h5>
-                <Carousel className="card-carousel">
-                  {feature.carouselImages.map((image, idx) => (
-                    <Carousel.Item key={idx}>
-                      <img className="d-block w-100 carousel-img" src={image.src} alt={image.title} />
-                      <Carousel.Caption>
-                        <h5>{image.title}</h5>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                  ))}
-                </Carousel>
-                <button className="more" style={{ fontFamily: 'Montserrat, sans-serif' }}>Découvrir</button>
-              </div>
-            </div>
-          </div>
-        ))}
+        <br />
+      <h2 style={{ fontFamily: 'Montserrat, sans-serif', textAlign: 'center' }}> <b>Passez tous vos commandes via Whatsapp en Dessous</b></h2>
+      <br />
+      {featureData.map((feature, index) => (
+  <div
+    key={index}
+    className={`feature-card ${visibleCards[index] ? 'spawn' : 'hidden'} ${index % 2 === 1 ? 'reverse' : ''}`}
+    ref={(el) => (cardRefs.current[index] = el)}
+  >
+    <div className="card-content">
+      <img className="card-img-large" src={feature.mainImage} alt={feature.title} />
+      <div className="text-content">
+        <h5 className="card-title" style={{ fontFamily: 'Montserrat, sans-serif', textAlign: 'center'}}> <b> {feature.title} </b> </h5>
+        <Carousel className="card-carousel">
+          {feature.carouselImages.map((image, idx) => (
+            <Carousel.Item key={idx}>
+              <img className="d-block w-100 carousel-img" src={image.src} alt={image.title} />
+              <Carousel.Caption>
+                <h5>{image.title}</h5>
+              </Carousel.Caption>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+        <Link to={`/${feature.route}`}>
+          <button className="more" style={{ fontFamily: 'Montserrat, sans-serif' }}>Découvrir</button>
+        </Link>
+      </div>
+    </div>
+  </div>
+))}
       </div>
     </div>
   );

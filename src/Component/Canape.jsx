@@ -61,7 +61,6 @@ function Canape() {
                 >
                     <img src={`data:image/jpeg;base64,${canape.image}`} alt={canape.title} />
                     <h1>{canape.title}</h1>
-                    <p>{canape.description}</p>
                 </div>
             ))}
         </div>

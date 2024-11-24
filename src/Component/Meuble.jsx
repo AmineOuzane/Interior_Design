@@ -67,7 +67,6 @@ function Salon() {
                         alt={product.title}
                     />
                     <h1>{product.title}</h1>
-                    <p>{product.description}</p>
                 </div>
             ))}
         </div>
