@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
       <div className="container">
-        <Link className="navbar-brand fw-bold" to="/">Mounaim</Link>
+        <Link className="navbar-brand fw-bold" to="/">Tissir El Alia</Link>
         <button
           className="navbar-toggler"
           type="button"

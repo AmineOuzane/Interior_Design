@@ -23,16 +23,17 @@ import chaise1Image from '../../src/images/chaise1.png';
 import chaise2Image from '../../src/images/chaise2.png';
 import furniture1Image from '../../src/images/furniture1.png';
 import furniture2Image from '../../src/images/furniture2.png';
-
+import habillage1Image from '../../src/images/habillage7.png';
+import habillage2Image from '../../src/images/habillage8.png';
 const Features = () => {
   const featureData = [
-    { title: "DÉCOUVREZ NOS OFFRES SALON", mainImage: meublecanapeImage, carouselImages: [{ src: sofaLImage, title: "Canapé de Salon" }, { src: sofaUImage, title: "Canapé Design" }] },
-    { title: "DÉCOUVREZ NOS CANAPÉS", mainImage: canapeImage, carouselImages: [{ src: sofa1Image, title: "Canapé Moderne" }, { src: sofa2Image, title: "Chaise de Luxe" }] },
-    { title: "DÉCOUVREZ NOS OFFRES CHAMBRES", mainImage: chambreImage, carouselImages: [{ src: bed1Image, title: "Chambre Parentale" }, { src: bed2Image, title: "Habillage en Bois" }] },
-    { title: "DÉCOUVREZ NOS COLLECTIONS DE TABLE", mainImage: tableImage, carouselImages: [{ src: table1Image, title: "Table Moderne" }, { src: table2Image, title: "Meuble TV" }] },
-    { title: "DÉCOUVREZ NOS COLLECTIONS DE CHAISES", mainImage: chaiseImage, carouselImages: [{ src: chaise1Image, title: "Chaise Confort" }, { src: chaise2Image, title: "Table en Bois" }] },
-    { title: "INSPIREZ-VOUS DE NOS MEUBLES", mainImage: meubleImage, carouselImages: [{ src: furniture1Image, title: "Meuble Classique" }, { src: furniture2Image, title: "Habillage Moderne" }] },
-    { title: "DÉCOUVREZ NOS HABILLAGES EN BOIS", mainImage: habillageImage, carouselImages: [] },
+    { title: "DÉCOUVREZ NOS OFFRES SALON", mainImage: meublecanapeImage, carouselImages: [{ src: sofaLImage}, { src: sofaUImage}] },
+    { title: "DÉCOUVREZ NOS CANAPÉS", mainImage: canapeImage, carouselImages: [{ src: sofa1Image}, { src: sofa2Image}] },
+    { title: "DÉCOUVREZ NOS OFFRES CHAMBRES", mainImage: chambreImage, carouselImages: [{ src: bed1Image}, { src: bed2Image}] },
+    { title: "DÉCOUVREZ NOS COLLECTIONS DE TABLE", mainImage: tableImage, carouselImages: [{ src: table1Image}, { src: table2Image}] },
+    { title: "DÉCOUVREZ NOS COLLECTIONS DE CHAISES", mainImage: chaiseImage, carouselImages: [{ src: chaise1Image}, { src: chaise2Image}] },
+    { title: "INSPIREZ-VOUS DE NOS MEUBLES", mainImage: meubleImage, carouselImages: [{ src: furniture1Image}, { src: furniture2Image}] },
+    { title: "DÉCOUVREZ NOS HABILLAGES EN BOIS", mainImage: habillageImage, carouselImages: [{ src: habillage1Image }, { src: habillage2Image}] },
   ];
 
   const [visibleCards, setVisibleCards] = useState(new Array(featureData.length).fill(false));
