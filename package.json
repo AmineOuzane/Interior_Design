@@ -2,6 +2,7 @@
   "name": "interior-design",
   "private": true,
   "version": "0.0.0",
+  "homepage": "/Interior_Design",
   "type": "module",
   "scripts": {
     "dev": "vite",
