@@ -9,7 +9,7 @@ function Canape() {
 
     // Fetch all canapes when the component mounts
     useEffect(() => {
-        axios.get('http://localhost:8080/canapes')
+        axios.get('https://tissirelalia-backend.onrender.com/canapes')
             .then((response) => {
                 setCanapes(response.data);
             })

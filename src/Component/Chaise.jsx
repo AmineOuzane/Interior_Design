@@ -9,7 +9,7 @@ function Salon() {
 
     // Fetch product data
     useEffect(() => {
-        axios.get('http://localhost:8080/chaises')
+        axios.get('https://tissirelalia-backend.onrender.com/chaises')
             .then((response) => {
                 setProducts(response.data);
             })

@@ -9,7 +9,7 @@ function Habillage() {
 
     // Fetch product data
     useEffect(() => {
-        axios.get('http://localhost:8080/habillages')
+        axios.get('https://tissirelalia-backend.onrender.com/habillages')
             .then((response) => {
                 setProducts(response.data);
             })

@@ -9,7 +9,7 @@ function Chambre() {
 
     // Fetch product data
     useEffect(() => {
-        axios.get('http://localhost:8080/chambres')
+        axios.get('https://tissirelalia-backend.onrender.com/chambres')
             .then((response) => {
                 setProducts(response.data);
             })
